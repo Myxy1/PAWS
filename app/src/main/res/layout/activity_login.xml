@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow"
+    tools:context=".LoginActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loginAnim.json"
+        app:lottie_loop="true"
+        android:id="@+id/loginAnim"/>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editEmailLogin"
+        android:layout_centerInParent="true"
+        android:hint="Emailcím"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPasswordLogin"
+        android:layout_below="@id/editEmailLogin"
+        android:hint="Jelszó"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/buttonLogin"
+        android:layout_below="@id/editPasswordLogin"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mancs"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRegister"
+        android:text="Regisztráció"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
