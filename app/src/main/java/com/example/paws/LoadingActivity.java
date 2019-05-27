@@ -6,12 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class LoadingActivity extends AppCompatActivity {
 
     private static int SPLASH_TIME_OUT = 4000; //A betöltési időt itt lehet beállítani.
-    private TextView textViewLoading;
+    private ImageView textViewLoading;
     private Animation fade_in, fade_out, bounce;
 
     @Override
@@ -34,7 +35,7 @@ public class LoadingActivity extends AppCompatActivity {
 
     public void init()
     {
-        textViewLoading = (TextView) findViewById(R.id.textViewLoading);
+        textViewLoading = (ImageView) findViewById(R.id.imageViewLoading);
         fade_in = AnimationUtils.loadAnimation(LoadingActivity.this,R.anim.fade_in);
         fade_out = AnimationUtils.loadAnimation(LoadingActivity.this,R.anim.fade_out);
         bounce = AnimationUtils.loadAnimation(LoadingActivity.this,R.anim.bounce);

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoadingActivity">
+    tools:context=".LoadingActivity"
+    android:background="@drawable/hatter01">
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="500dp"
@@ -14,16 +15,14 @@
         app:lottie_loop="true"
         android:id="@+id/loading"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewLoading"
+        android:id="@+id/imageViewLoading"
+        android:background="@drawable/logo"
         android:layout_below="@id/loading"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:layout_alignParentBottom="true"
-        android:textStyle="bold"
-        android:text="Pets are Always Widely in Safehand"
-        android:textSize="25dp"/>
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorYellow"
+    android:background="@drawable/hatter01"
     tools:context=".LoginActivity">
 
     <com.airbnb.lottie.LottieAnimationView
@@ -47,7 +47,8 @@
         android:id="@+id/buttonRegister"
         android:text="Regisztráció"
         android:layout_below="@id/buttonLogin"
-        android:layout_marginTop="40dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/nyakorv2"/>
 
 </RelativeLayout>
